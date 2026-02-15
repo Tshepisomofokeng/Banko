@@ -1,0 +1,208 @@
+.body {
+  font-family: "Poppins";
+}
+.banner {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+.banner-content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner img {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first-p {
+  display: inline;
+  border: 0.5px solid black;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  font-size: 15px !important;
+  text-shadow: none !important;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: -10px;
+  margin-top: 20px;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.banner-content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(118, 115, 115, 0.5);
+}
+
+form {
+  display: grid;
+  margin-top: 30px;
+}
+
+.input-wrapper {
+  display: grid;
+  align-items: center; /* Vertically centers the icon */
+}
+
+.icon {
+  grid-area: 1 / 1; /* Put in the first cell */
+  margin-left: 20px; /* Position it from the left */
+  z-index: 2; /* Ensure it sits on top */
+  pointer-events: none;
+  color: #888;
+}
+
+input {
+  grid-area: 1 / 1; /* Put in the same first cell */
+  width: 100%;
+  height: 50px;
+  padding-left: 60px; /* Make room for the icon */
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 25px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.banner-content button {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  width: 30%;
+  justify-self: end;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  height: 50px;
+}
+
+h4 {
+  font-size: 17px;
+  font-weight: 600;
+}
+.banner-icons {
+  display: grid;
+  grid-auto-flow: column;
+}
+.banner-icons i {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(245, 244, 244);
+  padding: 8px;
+  border-radius: 50% 50% 50% 50%;
+}
+
+.process-section {
+  text-align: center;
+}
+
+.process-section h2 {
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.steps {
+  width: 1200px;
+  display: grid;
+  grid-auto-flow: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.steps div {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.steps-numbers {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-content: center;
+}
+
+.steps-numbers p {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+.steps h4 {
+  font-size: 22px;
+  margin-bottom: 1px;
+  letter-spacing: normal;
+  font-family: "Poppins";
+}
+
+.p {
+  font-size: 17px;
+  width: 60%;
+  
+  justify-self: center;
+  font-family: "Poppins";
+}
+.benifits{
+    display: grid;
+    width: 1050px;
+    height: 450px;
+     grid-template-columns: auto 1fr 1fr; 
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.benifits h2 {
+  font-size: 30px;
+  margin-bottom: 1px;
+  letter-spacing: normal;
+  font-family: "Poppins";
+  font-weight: bold;
+  width: 60%;
+  line-height: 1.3;
+  margin-top: -7px;
+}
+
+.benifits li {
+  font-size: 14px;
+  margin-bottom: 1px;
+  font-family: "Poppins";
+  font-weight: 400;
+  width: 80%;
+  line-height: 1.5;
+  margin-left: 15px;
+}
+
+.benifits img{
+    width: 200px;
+}
+
+.benifits img:nth-of-type(1) {
+    align-self: end;
+}
+
+.benifits img:nth-of-type(2) {
+    align-self: start;
+}
+
+.benifits button {
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  font-size: 13px;
+  padding: 10px 35px 10px 35px;
+  
+}
