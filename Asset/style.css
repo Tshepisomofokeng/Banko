@@ -1,6 +1,61 @@
 .body {
-  font-family: "Poppins";
+  font-family: "Inter";
+  padding: 0px;
 }
+
+nav{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 200px 2fr 1fr;
+  justify-content: space-between;
+  align-content: center;
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+nav a{
+  color: rgb(66, 64, 64);
+  text-decoration: none;
+  margin-top: -15px;
+  font-weight: 600;
+  font-family: 'poppins';
+  font-size: 1em;
+}
+
+.menu {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  column-gap: 30px;
+  margin-top: 20px;
+}
+
+nav button{
+  padding: 15px 25px 15px 25px ;
+  border-radius: 25px;
+  font-family: 'Inter';
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  float: right;
+  
+}
+
+.sign-in{
+  background-color: white;
+  color:#888;
+  border: 1px #888 solid;
+  margin-right: 10px;
+}
+
+.sign-up{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  
+}
+
 .banner {
   display: grid;
   grid-auto-flow: column;
@@ -22,25 +77,30 @@
   display: inline;
   border: 0.5px solid black;
   border-radius: 20px;
+  color: #333333;
+  font-family: 'Inter';
   padding: 10px 20px 10px 20px;
-  font-size: 15px !important;
+  font-size: 0.7em !important;
   text-shadow: none !important;
   font-weight: 600;
 }
 
 h1 {
-  font-size: 60px;
-  margin-bottom: -10px;
-  margin-top: 20px;
+  font-size: 3.5em;
+  color: #333333;
+  font-family: 'Inter';
+  margin-bottom: 30px;
+  margin-top: 30px;
   line-height: 1;
   font-weight: 300;
   letter-spacing: 3px;
 }
 
 .banner-content p {
-  font-size: 18px;
+  color: #333333;
+  font-family: 'Inter';
+  font-size: 0.9em;
   letter-spacing: 1px;
-  text-shadow: 1px 1px 2px rgba(118, 115, 115, 0.5);
 }
 
 form {
@@ -50,30 +110,30 @@ form {
 
 .input-wrapper {
   display: grid;
-  align-items: center; /* Vertically centers the icon */
+  align-items: center; 
 }
 
 .icon {
-  grid-area: 1 / 1; /* Put in the first cell */
-  margin-left: 20px; /* Position it from the left */
-  z-index: 2; /* Ensure it sits on top */
+  grid-area: 1 / 1; 
+  margin-left: 20px; 
+  z-index: 2; 
   pointer-events: none;
-  color: #888;
+  color: #333333;
 }
 
 input {
-  grid-area: 1 / 1; /* Put in the same first cell */
+  grid-area: 1 / 1; 
   width: 100%;
   height: 50px;
-  padding-left: 60px; /* Make room for the icon */
+  padding-left: 60px;
   box-sizing: border-box;
-  border: 1px solid grey;
+  border: 1px solid #333333;
   border-radius: 25px;
   font-size: 14px;
   letter-spacing: 1px;
 }
 
-.banner-content button {
+footer button,.banner-content button {
   grid-row: 1/2;
   grid-column: 1/2;
   width: 30%;
@@ -81,34 +141,57 @@ input {
   border-radius: 25px;
   background-color: black;
   color: white;
-  font-size: 14px;
+  font-size: 0.75em;
   letter-spacing: 1px;
   height: 50px;
+  font-family: 'Inter';
 }
 
-h4 {
-  font-size: 17px;
+.banner-content h4 {
+  font-size: 0.8em;
   font-weight: 600;
+  color: #333333;
+  font-family: 'Inter';
 }
 .banner-icons {
   display: grid;
   grid-auto-flow: column;
+  justify-content: start;
+  column-gap: 10px;
 }
 .banner-icons i {
-  font-size: 25px;
+  font-size: 1.1em;
   color: rgb(0, 0, 0);
-  background-color: rgb(245, 244, 244);
   padding: 8px;
   border-radius: 50% 50% 50% 50%;
 }
 
+h3{
+  color: #333333;
+  font-family: 'Inter';
+  font-size: 1em;
+}
+
+h2{
+color: #242323;
+  font-family: 'Inter';
+  font-size: 2.2em;
+}
+
+.why-our-product h3{
+  color: #333333;
+  font-family: 'Inter';
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
 .process-section {
   text-align: center;
+  margin-top: 80px;
 }
 
 .process-section h2 {
-  font-size: 30px;
-  margin-top: 5px;
+  margin-top: -1px;
 }
 
 .steps {
@@ -118,6 +201,7 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin-top: -10px;
 }
 
 .steps div {
@@ -129,14 +213,16 @@ h4 {
 
 .steps-numbers {
   background-color: black;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   align-content: center;
+  font-family: 'Inter';
 }
 
 .steps-numbers p {
-  font-size: 15px;
+  font-family: 'Inter';
+  font-size: 1em;
   font-weight: bold;
   color: white;
 }
@@ -145,35 +231,39 @@ h4 {
   font-size: 22px;
   margin-bottom: 1px;
   letter-spacing: normal;
-  font-family: "Poppins";
+  color: #333333;
+  font-family: 'Inter';
+  letter-spacing: 1px;
+  
 }
 
 .p {
-  font-size: 17px;
+  font-size: 1em;
   width: 60%;
-  
+  color: #333333;
   justify-self: center;
-  font-family: "Poppins";
+  font-family: 'Inter';
+  margin-top: 20px;
+  letter-spacing: 1px;
+  line-height: 1.5;
 }
-.benifits{
-    display: grid;
-    width: 1050px;
-    height: 450px;
-     grid-template-columns: auto 1fr 1fr; 
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+
+.benifits {
+  display: grid;
+  margin-top: 50px;
+  width: 1050px;
+  height: 450px;
+  grid-template-columns: auto 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
 
 .benifits h2 {
-  font-size: 30px;
-  margin-bottom: 1px;
-  letter-spacing: normal;
-  font-family: "Poppins";
-  font-weight: bold;
+  
+  margin-bottom: 10px;
   width: 60%;
-  line-height: 1.3;
-  margin-top: -7px;
+  margin-top: 20px;
 }
 
 .benifits li {
@@ -186,16 +276,16 @@ h4 {
   margin-left: 15px;
 }
 
-.benifits img{
-    width: 200px;
+.benifits img {
+  width: 200px;
 }
 
 .benifits img:nth-of-type(1) {
-    align-self: end;
+  align-self: end;
 }
 
 .benifits img:nth-of-type(2) {
-    align-self: start;
+  align-self: start;
 }
 
 .benifits button {
@@ -204,5 +294,342 @@ h4 {
   color: white;
   font-size: 13px;
   padding: 10px 35px 10px 35px;
+}
+
+.why-our-product {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: auto 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1050px;
+  align-items: center;
+}
+
+.why-our-product h2 {
+  width: 60%;
+}
+
+
+.why-our-product p {
+  font-family: "Poppins";
+  font-size: 0.5em;
+  width: 60%;
+  font-size: 1em;
+  margin-top: -25px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.stats p {
+  font-size: 1em;
+  width: 100% !important;
+}
+
+.products {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1050px;
+  grid-template-columns: 350px 350px 350px;
+  margin-top: 30px;
+  font-family: "Poppins";
+  column-gap: 50px;
+  row-gap: 10px;
+}
+
+.product-headings {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline;
+  margin-left: 10px;
+}
+
+.product-paragraph {
+  font-size: 0.9em;
+  width: 80%;
+}
+
+.with-border {
+  position: relative;
+}
+
+.with-border::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 60%;
+  background-color: gray;
+}
+
+.product-container i {
+  display: inline;
+}
+
+.best-feature {
+  margin-top: 100px;
+  text-align: center;
+  justify-items: center;
+}
+
+.best-feature h2 {
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.best-feature p {
+  font-size: 1em;
+  font-family: "Poppins";
+  width: 40%;
+}
+
+.pricing {
+  display: grid;
+  justify-items: center;
+  width: 900px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-right: auto;
+  text-align: center;
+  height: 400px;
+  align-items: stretch;
+}
+
+.pricing li {
+  text-align: start;
+  font-family: "Poppins";
+  font-size: 0.8em;
+  line-height: 1.8;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.pricing li::before {
+  content: "✓";
+  margin-right: 10px;
+}
+
+.pricing-gray {
+  background-color: #303030;
+  color: white;
+  padding: 20px;
+  display: grid;
+  align-content: start;
+  grid-template-rows: auto auto auto 1fr auto;
+}
+
+.pricing-white {
+  color: #303030;
+  padding: 20px;
+  display: grid;
+  align-content: start;
+
+  grid-template-rows: auto auto auto 1fr auto;
+}
+.price-header {
+  font-family: "Poppins";
+}
+
+.amount {
+  font-size: 1.8em;
+  margin-top: -4px;
+  margin-bottom: -3px;
+}
+
+.amount span {
+  font-size: 0.5em !important;
+}
+
+.the-line {
+  font-family: "Poppins";
+  font-size: 0.8em;
+}
+
+.pricing button {
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  height: 35px;
+  font-size: 0.8em;
+}
+
+.pricing-gray button {
+  background-color: white;
+  color: #303030;
+}
+
+.pricing-white button {
+  background-color: #303030;
+  color: white;
+}
+
+.testimonials{
+  margin-top: 50px;
+  background-color: #f0f0f0;
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  place-items: center;
+  padding-top: 30px;
+}
+
+
+.testimonials h2 {
   
+  margin-top: -7px;
+  margin-bottom: -5px;
+}
+
+.testimonials img{
+  width: 650px;
+  margin-right: -150px;
+}
+
+.testimonials p {
+  font-size: 1.2em;
+  font-weight: 300s;
+  font-family: "Poppins";
+  width: 70%;
+}
+
+.testimonials h4 {
+  font-size: 1em;
+  font-family: "Poppins";
+  margin-top: 40px;
+  margin-bottom: -10px;
+}
+
+.position-name {
+  font-size: 0.85em !important ;
+  color: #303030 !important;
+}
+
+.star-rating {
+  margin-top: -15px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+}
+
+.star {
+  font-size: 2rem;
+  color: #ffc107; 
+  cursor: pointer;
+}
+
+
+.star:hover,
+.star:hover ~ .star {
+  color: #ccc ;
+}
+
+footer{
+ display: grid;
+ grid-auto-flow: column;
+ grid-template-columns: 400px auto auto 400px;
+ width: 1200px;
+ margin-left: auto;
+ margin-right: auto;
+ padding-top: 50px;
+}
+
+.logo{
+  width: 150px;
+  margin-left: -15px;
+  margin-bottom: -5px;
+}
+
+.logo-content p{
+  font-family: 'poppins';
+  font-size: 1em;
+  width: 70%;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+footer div{
+  display: grid;
+}
+
+.stores{
+  display: grid;
+  grid-template-columns: 150px 150px;
+  column-gap: 10px;
+}
+
+.stores img{
+  width: 150px !important;
+}
+
+footer h4{
+  font-family: 'poppins';
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+
+footer a{
+  color: rgb(66, 64, 64);
+  text-decoration: none;
+  margin-top: -15px;
+  font-weight: 600;
+  font-family: 'poppins';
+  font-size: 1em;
+}
+
+footer form{
+  margin-top: 0;
+  margin-left: -5px;
+  width: 90%;
+}
+
+footer input {
+  
+  height: 40px;
+  
+}
+
+footer button {
+
+  width: 40%;
+  height: 40px;
+}
+
+.footer-icons{
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  column-gap: 10px;
+}
+
+.join{
+  font-size: 0.8em;
+  font-family: 'poppins';
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.footer-icons i{
+  font-size: 1.5em;
+  
+}
+
+.copyrights {
+  margin-top: 30px;
+  border-top: 1px #888 solid;
+  text-align: center;
+  font-family: 'poppins';
+  font-size: 1em;
+  color: #888;
 }
